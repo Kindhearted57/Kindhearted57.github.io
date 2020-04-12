@@ -151,8 +151,8 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
+    app_id    : https://github.com/Kindhearted57/kindhearted57.github.io # LeanCloud App id
+    app_key   : MsAOhPtfFvEhDQoEcc9sDUnI # LeanCloud App key
     app_class : # LeanCloud App class
 
 
@@ -173,7 +173,7 @@ analytics:
 
   ## Google Analytics
   google:
-    tracking_id : # Google Analytics id for the site
+    tracking_id : UA-163467178-1 # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 
