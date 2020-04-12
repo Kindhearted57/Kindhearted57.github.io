@@ -1,0 +1,76 @@
+---
+layout: post
+title: "github.io初体验"
+date: 2019-09-22
+categories:
+  - blog
+description:这个地方是不是写摘要的地方呢...
+image: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
+image-sm: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
+---
+
+# github.io初体验
+&ensp;&ensp;&ensp;&ensp;之前本着想记录自己在一些编程过程中遇到的错误，以便其他人在遇到的时候能够有所参考，也为了自己后续使用的方便，在csdn上面写了几篇博客（还有一大堆没有发布的)。不过，逐渐发现csdn真的不好用，编辑界面不够方便，广告植入，主页上很多不需要的推送，甚至每次登陆的时候还要被迫关注几个csdn的公众号...前天在写作业的时候偶然发现了github.io这回事，所以就（因为我太菜了所以花了好多时间）弄了个小网页。
+## github
+&ensp;&ensp;&ensp;&ensp;默认有github账号，并且具有初步使用能力。
+## jekyll
+&ensp;&ensp;&ensp;&ensp;首先选择了jekyll这个部署工具。似乎hexo也可以使用，不过我没有用到就不太了解。
+
+* 模版选择  
+[这个网站上面有许多可用的模版](http://jekyllthemes.org)，比如说我选择了这个模版。
+![template_to_show](https://note.youdao.com/yws/api/personal/file/WEB61ea3d8431a21f96380ae60971b09fe7?method=download&shareKey=424f18a54b4c76d8fcedd38e16a18164)  
+点进去，然后看到这里  
+![template_to_show_1](https://note.youdao.com/yws/api/personal/file/WEBdaacc35953701388e1065ce986af45bc?method=download&shareKey=730dbf48e99fa9c7fe9cc6b4dc539a6e)  
+点击进入这个模版的github界面   
+![template_to_show_2](https://note.youdao.com/yws/api/personal/file/WEBe69fae99048c2492b025a09dacf066e0?method=download&shareKey=4e59f17de74c1aaba05fc9c9c1b0a64c)  
+在图示标出的地方把这个文件fork到自己的repository下面来。然后回到自己的账号里面，把刚刚fork过来的文件名称改成自己id+github.io，修改位置在repository下面的setting里面。这个位置改好了之后，往下拉，可以看到这个界面。  
+![template_to_show_3](https://note.youdao.com/yws/api/personal/file/WEB002e29a17cbdb5565098528b8f6de3a9?method=download&shareKey=3bc5b85e5d585de4e3839c1df9f194ea)   
+点进去这个链接就可以看到自己的网页大概的亚子了，不过目前为止都是模版上的内容，有些东西还是需要改成自己的。至于修改方法，模版的作者都有说明，按照readme改一下就行了。
+
+## 发布新的内容
+网上的一些教程方法多多，看的眼花缭乱，最后选择了如下的解决方案。首先下载了[GithubDesktop](https://desktop.github.com)。登陆之后，就可以在本地打开刚刚fork过来的repository，刚刚修改主页内容的操作大概都是在一些config文件搞的，现在需要去这个文件夹里面。  
+![file_show](https://note.youdao.com/yws/api/personal/file/WEBa5236f0f539e6b268390d86d5277f2b8?method=download&shareKey=ed44bad3ecf43244476a0bf9688432e3)  
+在这里面新建.markdown文件，然后命名的时候记得年份-月份-日期-文章名.markdown。  
+### 一些遇到的错误
+  
+* 在md文件中添加yml文件头  
+在要发布的markdown文件的前面要加上如下内容，具体内容根据情况而定，就是要加上这样一个头来表示文件放置的位置。   
+![add_lines](https://note.youdao.com/yws/api/personal/file/WEB4413938a756cfdf3046bc94aa831ff81?method=download&shareKey=5a3e97dd1d5c427a43f272473a0f5a03)
+* 图片插入解决方案  
+图片的插入有几种方法，第一种是生成图片的网页链接，然后直接插入，好处是这个链接不会出什么问题，如果使用本地的链接的话，只有在本地预览的时候才会有效果。想到反正都是托管在github上面的，应该可以使用github的地址，于是在**根目录**，下面建了一个pics文件夹，之后文件放到里面，在md文件里面使用的时候直接用路径/pics/thenameofyourpics.png(or whatever)就OK啦。
+* 网页更新  
+最开始以为点了commit就可以了，原来还要push to origin才可以...
+![page_fresh](https://note.youdao.com/yws/api/personal/file/WEB830e2eca09321ae3d7474c0ba22fc5ad?method=download&shareKey=bed183ff1130eec632c2cade1c2d6cd2)
+* 摘要冗余显示  
+push了好几版之后显示如下，发现这个地方好像在公众号写推送之后没有修改摘要的样子，试着在正文之前添加了一点内容，看看可以不可以。
+![abstract_problem](https://note.youdao.com/yws/api/personal/file/WEB8f2627939a9e5f76fa03dc9357f54900?method=download&shareKey=c01d079ae932028fcff29fa957c2283b)
+* categories显示问题  
+发现categories点进去显示404，应该是哪个地方链接出了问题。作业还没写...先去写作业了，有时间再过来看看这个事。  
+2020.2.24更新：为了搞明白这个问题，参考了[这部分内容](https://www.sitepoint.com/jekyll-plugins-github/)。发现了原因出现在github建立网站的方式是build _site这个文件夹下面的内容，说到底不会运行JekyII的Plugin。也就是github是使用jekyll build --safe这条命令来创建网页，而--safe这个参数使plugin不能够运行。  
+解决方法一：在本地build，然后再将静态文件push到github上面。  
+解决方法二：有一些麻烦，暂时还用不上，在上面那篇博客中也讲的很清楚了。  
+在使用`jekyll build`这条命令的时候出现了一些问题如下![jekyll_build_problem](https://note.youdao.com/yws/api/personal/file/WEBed4902b49bc6ef486957b64b837cc189?method=download&shareKey=38f22c8d4350008c66711b49aada9767)。解决方案是在使用`gem install jekyll bundler`下载了gem包之后，再输入命令`bundle install`。  
+在解决了以上的问题之后，再进行`jekyll build`，显示如下  
+![result](https://note.youdao.com/yws/api/personal/file/WEBe6da78e45536b0a192478553f686b423?method=download&shareKey=f8b73f3ea5301cb2bb8675eb20298082)  
+这时候所报出来的问题是需要我们进行下面的步骤--去启动服务器，后面的步骤可以交给github来操作了。现在我们已经得到了我们所想要的静态网页。
+
+
+    
+
+## 关于markdown
+&ensp;&ensp;&ensp;&ensp;之前弄数学建模的时候，用过latex，并且比较喜欢latex这种编辑方式，感觉markdown是更加灵活简便的latex编辑。本来想直接在SublimeText添加几个插件然后使用，之后查阅了一番发现有点繁琐，就放弃了。转而尝试mou，不过这个只能支持MacOS的版本到10.11，于是也放弃了，在查找的过程中发现了[Macdown](https://macdown.uranusjr.com/)这个软件。现在正在使用，感觉还不错。markdown的语法，在下载Macdown之后提供的help.md之内就可以了解一个大概，如果还需要什么的话，可以在需要的时候再去检索。
+
+## 添加图片的方法
+[参考了这篇博客](https://blog.csdn.net/dailingnan0827/article/details/86412414)，先保存到有道云，通过分享链接保存地址。
+
+
+   
+## 测试草稿使用的方法
+`jekyll serve --draft`
+draft的命名也不需要标注时间，在使用上述命令的时候会自动使用今日时间（最后编辑时间）
+
+## permalink
+在front matter 上面加入permalink，
+不会使用文件夹下面的url，而会使用permalink中自己定义的url。
+在permalink中也可以做到动态使用：
+`/:categories`
