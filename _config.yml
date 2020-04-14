@@ -14,8 +14,6 @@
 
 
 
-
-
 ## => Site Settings
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
@@ -25,39 +23,37 @@ baseurl : # does not include hostname
 title   : Your Site Title
 description: > # this means to ignore newlines until "Language & timezone"
   Your Site Description
-  
-  
 ## => Language and Timezone
 ##############################
 lang: # the language of your site, default as "en"
-timezone: CN # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 
 ## => Author and Social
 ##############################
 author:
-  type      :person # "person" (default), "organization"
-  name      : Ji Ru
+  type      : # "person" (default), "organization"
+  name      : Your Name
   url       :
   avatar    : # path or url of avatar image (square)
-  bio       : Student.
-  email     :jiru@bupt.edu.cn
+  bio       : I am an amazing person.
+  email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  twitter   :https://twitter.com/eszXiPhkaP0p4di # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
-  weibo     : https://www.weibo.com/u/2419089467/home?wvr=5 # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
+  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
-  douban    : https://www.douban.com/people/191322874/ # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
+  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : https://github.com/Kindhearted57 # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: Kindhearted57/kindhearted57.github.io
+repository: user_name/repo_name
 repository_tree: master
 
 
@@ -120,7 +116,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: false # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:
@@ -129,12 +125,12 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : 325fb182336346026c29 # GitHub Application Client ID
-    clientSecret: d38602ab4b9d74a03054c5bcd746df71e29b2a08 # GitHub Application Client Secret
-    repository  : kindhearted57.github.io # GitHub repo
-    owner       : Kindhearted57 # GitHub repo owner
+    clientID    : # GitHub Application Client ID
+    clientSecret: # GitHub Application Client Secret
+    repository  : # GitHub repo
+    owner       : # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      Kindhearted57 # - your GitHub Id
+      # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
@@ -153,9 +149,9 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : https://github.com/Kindhearted57/kindhearted57.github.io # LeanCloud App id
-    app_key   : MsAOhPtfFvEhDQoEcc9sDUnI # LeanCloud App key
-    app_class : statics# LeanCloud App class
+    app_id    : # LeanCloud App id
+    app_key   : # LeanCloud App key
+    app_class : # LeanCloud App class
 
 
 ## => Search
@@ -171,11 +167,11 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: google # false (default), "google", "custom"
+  provider: false # false (default), "google", "custom"
 
   ## Google Analytics
   google:
-    tracking_id : UA-163467178-1 # Google Analytics id for the site
+    tracking_id : # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 
