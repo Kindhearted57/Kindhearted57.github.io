@@ -12,7 +12,6 @@ modify_date: 2020-4-28
 shraring: true
 show_author_profile: true
 show_subscribe: true
-
 ---
 # Description
 Depositing one token without `transferFrom` into EtherDelta:
