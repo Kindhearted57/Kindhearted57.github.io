@@ -39,15 +39,15 @@ author:
   bio       : I am an amazing person.
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/eszXiPhkaP0p4di
-  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/u/2419089467/home?wvr=5
+  twitter   : https://twitter.com/eszXiPhkaP0p4di # "user_name" the last part of your profile url, e.g. https://twitter.com/eszXiPhkaP0p4di
+  weibo     : https://www.weibo.com/u/2419089467/home?wvr=5 # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/u/2419089467/home?wvr=5
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
-  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/kindhearted57
+  telegram  : https://t.me/kindhearted57 # "user_name" the last part of your profile url, e.g. https://t.me/kindhearted57
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
-  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/191322874
+  douban    : https://www.douban.com/people/191322874 # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/191322874
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : # "user_name" the last part of your profile url, e.g. https://github.com/Kindhearted57
+  github    : https://github.com/Kindhearted57 # "user_name" the last part of your profile url, e.g. https://github.com/Kindhearted57
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
@@ -130,7 +130,7 @@ comments:
     repository  : kindhearted57.github.io # GitHub repo
     owner       : Kindhearted57 # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      Kindhearted57# - your GitHub Id
+      Kindhearted57 # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
@@ -149,9 +149,9 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : https://github.com/Kindhearted57/kindhearted57.github.io# LeanCloud App id
+    app_id    : https://github.com/Kindhearted57/kindhearted57.github.io # LeanCloud App id
     app_key   : MsAOhPtfFvEhDQoEcc9sDUnI # LeanCloud App key
-    app_class : statics# LeanCloud App class
+    app_class : statics # LeanCloud App class
 
 
 ## => Search
