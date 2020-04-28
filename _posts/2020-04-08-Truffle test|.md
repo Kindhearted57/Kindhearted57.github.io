@@ -7,7 +7,12 @@ categories:
 description: The mismatch of balance
 image: 
 image-sm: 
-
+key:  truffle_test_error_address
+author
+modify_date:
+shraring: true
+show_author_profile: true
+show_subscribe: true
 ---
 # Description
 Depositing one token without `transferFrom` into EtherDelta:
