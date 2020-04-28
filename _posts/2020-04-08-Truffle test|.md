@@ -5,16 +5,14 @@ date: 2020-04-18
 tags: Ethereum
 category: blog
 description: The mismatch of balance
-page:
-	key:  truffle_test_error_address
-	author: Ji Ru
-	pageview: true
-Article:
-	modify_date:
-	shraring: true
-	show_author_profile: true
-	show_subscribe: true
-	
+key:  truffle_test_error_address
+author: Ji Ru
+pageview: true
+modify_date:
+shraring: true
+show_author_profile: true
+show_subscribe: true
+
 ---
 # Description
 Depositing one token without `transferFrom` into EtherDelta:
