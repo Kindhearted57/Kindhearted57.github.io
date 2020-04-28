@@ -2,11 +2,10 @@
 layout: post
 title: "LDA model IndexError: index 4963 is out of bounds for axis 1 with size 4963"
 date: 2020-3-31
+key: 2020-03-31-LDA-error
 categories:
   - blog
-description:Some problem encounterd while using LDA model.s
-image: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
-image-sm: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
+
 ---
 
 # LDA model IndexError: index 4963 is out of bounds for axis 1 with size 4963
