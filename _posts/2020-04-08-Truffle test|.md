@@ -8,7 +8,7 @@ description: The mismatch of balance
 image: 
 image-sm: 
 key:  truffle_test_error_address
-author
+author: Ji Ru
 modify_date:
 shraring: true
 show_author_profile: true
