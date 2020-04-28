@@ -7,10 +7,11 @@ category: blog
 key:  truffle_token_deploy_error
 author: Ji Ru
 pageview: true
-modify_date: 2020-4-28
-shraring: true
-show_author_profile: true
-show_subscribe: true
+article:
+    modify_date: 2020-4-28
+    sharing: true
+    show_author_profile: true
+    show_subscribe: true
 ---
 # Truffle|xxx Token has not been deployed to detected network (network/artifact mismatch)
 ## Description
