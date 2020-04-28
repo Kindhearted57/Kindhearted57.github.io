@@ -1,6 +1,7 @@
 ---
 title: "LDA model IndexError: index 4963 is out of bounds for axis 1 with size 4963"
 key: 2020-03-31-LDA-error
+pageview: true
 ---
 
 # LDA model IndexError: index 4963 is out of bounds for axis 1 with size 4963
