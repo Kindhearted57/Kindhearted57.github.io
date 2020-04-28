@@ -34,10 +34,10 @@ timezone: China/Beijing# see https://en.wikipedia.org/wiki/List_of_tz_database_t
 author:
   type      : # "person" (default), "organization"
   name      : Ji Ru
-  url       :
-  avatar    : # path or url of avatar image (square)
+  url       : kindhearted57.github.io
+  avatar    : https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc # path or url of avatar image (square)
   bio       : Student.
-  email     :
+  email     : jiru@bupt.edu.cn
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : https://twitter.com/eszXiPhkaP0p4di # "user_name" the last part of your profile url, e.g. https://twitter.com/eszXiPhkaP0p4di
   weibo     : https://www.weibo.com/u/2419089467/home?wvr=5 # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/u/2419089467/home?wvr=5
@@ -53,7 +53,7 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: Kindhearted57/kindhearted57.github.io
 repository_tree: master
 
 
@@ -116,7 +116,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: false # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:
@@ -145,7 +145,7 @@ comments:
 ## => Pageview
 ##############################
 pageview:
-  provider: false # false (default), "leancloud", "custom"
+  provider: leancloud # false (default), "leancloud", "custom"
 
   ## Leancloud
   leancloud:
@@ -157,11 +157,11 @@ pageview:
 ## => Search
 ##############################
 search:
-  provider: default # "default" (default), false, "google", "custom"
+  provider: google # "default" (default), false, "google", "custom"
 
   ## Google Custom Search Engine
   google:
-    custom_search_engine_id: # Google Custom Search Engine ID
+    custom_search_engine_id: 001655163511739919635:yoqv6d7dfv4 # Google Custom Search Engine ID
 
 
 ## => Analytics

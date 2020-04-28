@@ -5,10 +5,10 @@ date: 2020-04-18
 tags: Ethereum
 category: blog
 description: The mismatch of balance
-key:  truffle_test_error_address
+key:  truffle_test_error_balance_mismatch
 author: Ji Ru
 pageview: true
-modify_date:
+modify_date: 2020-4-28
 shraring: true
 show_author_profile: true
 show_subscribe: true
