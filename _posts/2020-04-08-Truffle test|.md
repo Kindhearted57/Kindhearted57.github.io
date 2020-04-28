@@ -4,7 +4,6 @@ title: "Truffle Test|"
 date: 2020-04-18
 tags: Ethereum
 category: blog
-description: The mismatch of balance
 key:  truffle_test_error_balance_mismatch
 author: Ji Ru
 pageview: true
