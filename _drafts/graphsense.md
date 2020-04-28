@@ -1,3 +1,5 @@
+# Background
+Mac catalina, trying to understand graphsense, no experience with java, sbt, etc. As far as I can understand, here are few thing needed for using graphsense(as it is not)
 # graphsense
 ## transformation
 ### install sbt
@@ -36,8 +38,12 @@ This error shows up when you are in the wrong directory.)
 `test`
 
 `[error] (Test / compileIncremental) java.io.IOError: java.lang.RuntimeException: /packages cannot be represented as URI`
-
+[sbt](https://www.scala-sbt.org/download.html?_ga=2.163737023.1269010484.1587879876-1173452745.1587879876)
+![](https://note.youdao.com/yws/api/personal/file/WEBa46f2946c555c4be516329a2b36fe26b?method=download&shareKey=25fa7a6a4b5e390f6773a4b8365ab7fb)
 viewed some of the answers to this problem and suggest change the version of scala.
 Re-download sbt:
+### Java version
+[change JDK version](https://xobo.org/macos-switch-default-java-jdk/)
 install `jdk8`
-install 
+### Install sbt using macport
+

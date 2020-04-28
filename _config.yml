@@ -39,15 +39,15 @@ author:
   bio       : I am an amazing person.
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
-  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
+  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/eszXiPhkaP0p4di
+  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/u/2419089467/home?wvr=5
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
-  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
+  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/kindhearted57
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
-  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
+  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/191322874
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  github    : # "user_name" the last part of your profile url, e.g. https://github.com/Kindhearted57
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
@@ -125,12 +125,12 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
+    clientID    : 325fb182336346026c29 # GitHub Application Client ID
+    clientSecret: d38602ab4b9d74a03054c5bcd746df71e29b2a08 # GitHub Application Client Secret
+    repository  : kindhearted57.github.io # GitHub repo
+    owner       : Kindhearted57 # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+      Kindhearted57# - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
@@ -149,9 +149,9 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
-    app_class : # LeanCloud App class
+    app_id    : https://github.com/Kindhearted57/kindhearted57.github.io# LeanCloud App id
+    app_key   : MsAOhPtfFvEhDQoEcc9sDUnI # LeanCloud App key
+    app_class : statics# LeanCloud App class
 
 
 ## => Search
@@ -167,11 +167,11 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: false # false (default), "google", "custom"
+  provider: google # false (default), "google", "custom"
 
   ## Google Analytics
   google:
-    tracking_id : # Google Analytics id for the site
+    tracking_id : UA-163467178-1 # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 
