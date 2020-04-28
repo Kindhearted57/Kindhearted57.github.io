@@ -33,7 +33,7 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 ##############################
 author:
   type      : # "person" (default), "organization"
-  name      : Ji Ru
+  name      : JRR
   url       : kindhearted57.github.io
   avatar    : https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc # path or url of avatar image (square)
   bio       : Student.

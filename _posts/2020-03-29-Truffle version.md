@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "github.io初体验"
-date: 2020-03-29
-categories:
-  - blog
-description:Truffle version is really confusing..
-image: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
-image-sm: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
+title: "Truffle version"
+key: 2020-03-29-truffle-version
+pageview: true
+modify_date: 
+shraring: true
+show_author_profile: true
+show_subscribe: true
 ---
 # Truffle version
 ## Background 

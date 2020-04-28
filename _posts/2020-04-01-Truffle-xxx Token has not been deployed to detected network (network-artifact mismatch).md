@@ -1,17 +1,12 @@
 ---
 layout: post
-title: "Truffle|xxx Token has not been deployed to detected network (network/artifact mismatch)"
-date: 2020-04-01
-category: blog
-tags: Ethereum
-key:  truffle_token_deploy_error
-author: Ji Ru
+title: "ganache-cli problem"
+key: 2020-04-01-truffle
 pageview: true
-article:
-    modify_date: 2020-4-28
-    sharing: true
-    show_author_profile: true
-    show_subscribe: true
+modify_date: 
+shraring: true
+show_author_profile: true
+show_subscribe: true
 ---
 # Truffle|xxx Token has not been deployed to detected network (network/artifact mismatch)
 ## Description

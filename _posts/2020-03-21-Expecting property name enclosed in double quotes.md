@@ -1,12 +1,13 @@
 ---
+
 layout: post
-title: "github.io初体验"
-date: 2020-03-21
-categories:
-  - blog
-description:An python error about json
-image: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
-image-sm: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
+title: "Expecting property name enclosed in double quotes"
+key: 2020-03-21-json
+pageview: true
+modify_date: 
+shraring: true
+show_author_profile: true
+show_subscribe: true
 ---
 # Expecting property name enclosed in double quotes
 ## Background

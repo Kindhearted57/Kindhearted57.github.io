@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Mac catalina mysql"
-date: 2019-12-17
-categories:
-  - blog
-description:一次大数据实验和遇到的相关问题
-image: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
-image-sm: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
+key: 2019-12-17-catalina-mysql
+pageview: true
+modify_date: 
+shraring: true
+show_author_profile: true
+show_subscribe: true
 ---
 # Mac catalina mysql
 ## 问题梳理

@@ -1,19 +1,20 @@
 ---
 layout: post
-title: "github.io初体验"
-date: 2020-02-28
-categories:
-  - blog
-description:Crawler, GFW, proxy.
-image: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
-image-sm: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
+title: "Ether crawler"
+key: 2020-03-31-LDA-error
+pageview: true
+modify_date: 
+shraring: true
+show_author_profile: true
+show_subscribe: true
 ---
-# Tr
-#crawler connection problem
-## etherscan scawler
+
+# crawler connection problem
+
+## etherscan crawler
 
 	
-    I've written this scawler to collect some contracts information from [etherscan](https://etherscan.io).
+    I've written this crawler to collect some contracts information from [etherscan](https://etherscan.io).
 However, a few months later, I can't access this website anymore. At first I thought that's because I've got too much information from this website, so I'm banned from this website. However, even if my ip has adjusted, I still can't access this website through my crawler.  
 Later I found out that this is not some kind of connection problem. At the beginning this website is available without proxy, but now I have to access it with proxy. So that's the problem. There are a lot of differences with or without a proxy.  
 Here is my code at the beginning:

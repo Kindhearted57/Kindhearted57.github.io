@@ -1,13 +1,10 @@
 ---
 layout: post
-title: "Truffle Test|"
+title: "Truffle Test| a bug?"
 date: 2020-04-18
 tags: Ethereum
-category: blog
-key:  truffle_test_error_balance_mismatch
-author: Ji Ru
 pageview: true
-modify_date: 2020-4-28
+modify_date: 
 shraring: true
 show_author_profile: true
 show_subscribe: true

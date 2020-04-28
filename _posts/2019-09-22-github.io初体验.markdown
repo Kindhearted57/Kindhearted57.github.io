@@ -1,12 +1,11 @@
 ---
-layout: post
 title: "github.io初体验"
-date: 2019-09-22
-categories:
-  - blog
-description:这个地方是不是写摘要的地方呢...
-image: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
-image-sm: https://note.youdao.com/yws/api/personal/file/WEB5986828890383f08c9e80ac68f1bb750?method=download&shareKey=74123af89e050b12894d7079c6db5edc
+key: 2019-09-22-firstone
+pageview: true
+modify_date: 2020-4-28
+shraring: true
+show_author_profile: true
+show_subscribe: true
 ---
 
 # github.io初体验
