@@ -149,7 +149,7 @@ pageview:
 
   ## Leancloud
   leancloud:
-    app_id    : https://github.com/Kindhearted57/kindhearted57.github.io # LeanCloud App id
+    app_id    : 0BH6X4d6JoIEgeimQx6Kzy5H-gzGzoHsz # LeanCloud App id
     app_key   : MsAOhPtfFvEhDQoEcc9sDUnI # LeanCloud App key
     app_class : statics # LeanCloud App class
 
