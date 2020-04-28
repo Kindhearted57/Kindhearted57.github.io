@@ -2,17 +2,18 @@
 layout: post
 title: "Truffle Test|"
 date: 2020-04-18
-categories:
-  - Blog
+tags: Ethereum
 description: The mismatch of balance
-image: 
-image-sm: 
-key:  truffle_test_error_address
-author: Ji Ru
-modify_date:
-shraring: true
-show_author_profile: true
-show_subscribe: true
+page:
+	key:  truffle_test_error_address
+	author: Ji Ru
+	pageview: true
+Article:
+	modify_date:
+	shraring: true
+	show_author_profile: true
+	show_subscribe: true
+	
 ---
 # Description
 Depositing one token without `transferFrom` into EtherDelta:
