@@ -129,8 +129,8 @@ comments:
     clientSecret: 'd38602ab4b9d74a03054c5bcd746df71e29b2a08' # GitHub Application Client Secret
     repository  : 'kindhearted57.github.io' # GitHub repo
     owner       : 'Kindhearted57' # GitHub repo owner
-    admin: 'Kindhearted57' # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-       # - your GitHub Id
+    admin:  # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+       - 'Kindhearted57'# - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
