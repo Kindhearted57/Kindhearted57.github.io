@@ -2,8 +2,8 @@
 layout: post
 title: "Truffle|xxx Token has not been deployed to detected network (network/artifact mismatch)"
 date: 2020-04-01
-tags: Ethereum
 category: blog
+tags: Ethereum
 key:  truffle_token_deploy_error
 author: Ji Ru
 pageview: true
