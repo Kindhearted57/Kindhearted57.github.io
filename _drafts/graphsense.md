@@ -1,15 +1,23 @@
 # Background
 Mac catalina, trying to understand graphsense, no experience with java, sbt, etc. As far as I can understand, here are few thing needed for using graphsense(as it is not)
-# graphsense
-## transformation
-### install sbt
+# Graphsense
+## Transformation
+### Prequisites
+#### install sbt
 `brew install sbt`
-### install npm
+#### install npm
 `brew install node`
-### Apache Spark
+#### Apache Spark
 [Link](https://www.apache.org/dyn/closer.lua/spark/spark-3.0.0-preview2/spark-3.0.0-preview2-bin-hadoop2.7.tgz)
-### Apache Cassandra
+
+Change to the directory of spark and `$SPARK_HOME/sbin/start-master.sh`
+#### Apache Cassandra
 [Link](https://cassandra.apache.org/download/)
+
+[Unable to find java executable](https://stackoverflow.com/questions/32545746/cassandra-unable-to-find-java-executable)
+Change to the directory of the cassandra file and:
+`$SPARK_HOME/sbin/start-master.sh`
+### Ingest raw block data
 ## REST
 ### create python environment
 (make sure python version >3.7, and you are in the directory of REST downloaded from github.
