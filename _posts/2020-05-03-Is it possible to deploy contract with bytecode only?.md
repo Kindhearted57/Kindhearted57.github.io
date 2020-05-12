@@ -40,7 +40,7 @@ Note that, call methods are much different from transactions, `sendTransaction` 
 ### How do I construct my testing code?
 First, it is quite important to import the json file, which contains the bytecode information for every contract to be tested.
 `SyntaxError: Unexpected token } in JSON at position 93`
-This error keeps showing up in all forms. At last I found out that this has something to do with my json file, (I thought there are something wrong with npm at first because it is about JSON.) At last I found out that, My json file is constructed like this: a:`{{a1:,b1:,}.....}`. So there is one comma more than normal, which lead to the error. 
+This error keeps showing up in all forms. At last I found out that this has something to do with my json file, (I thought there are something wrong with npm at first because it is about JSON.) At last I found out that, My json file is constructed like this: `a:{{a1:,b1:,}}`. So there is one comma more than normal, which lead to the error. 
 ### Etherscan analysis
 The bytecode information can be divided into two types on [etherscan](https://etherscan.io). When source code is available, the bytecode is creation-bytecode, which means the value of constructor arguments have already been attached to it. The other type is those which source code is not available, the bytecode of the contract and consturctor are seperated.
 
