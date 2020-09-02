@@ -169,6 +169,13 @@ This result from revert.
 Hoever, I got an error, saying `Cannot find module 'ganache-cli'`
 [This](https://bitcointalk.org/index.php?topic=3122921.0;imode) is the only solution I found online.
 #### base fee exceeds gas limit
+## Final Solution
+web3py+ganache-cli
+### ganache-cli
+
+```
+ganache-cli -l 0x1fffffffffffff --defaultBalanceEther 100000000000
+```
 
 ## Conclusion
 My feeling when I have to finish this within a short period time without any knowledge of javascript:
