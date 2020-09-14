@@ -2,9 +2,16 @@
 ## Prequisition
 ‼️截止7月26日，你至少需要300GB的硬盘和60G的RAM来跑graphsense。配置十分重要。
 
+查看硬盘大小：`df -h`
+
+查看内存大小：`free -h`
+
+查看用户对相应目录的权限： `ls -l filename `
+
+
 ## My background
 
-最开始在自己的虚拟机上尝试Ubuntu18.04，四处碰壁，并且花费了许多时间等待⌛️，在某一环节发现配置严重不足导致无法编译。后来借用了一个还可以的服务器，一切就都变的容易得多了。
+最开始在自己的虚拟机上尝试Ubuntu18.04，四处碰壁，并且花费了许多时间等待⌛️，在某一环节发现配置严重不足导致无法编译。后来借用了一个还可以的服务器，一切就都变的容易得多了。中间因为权限的问题也耽搁了不少时间，后来服务器不给sudo权限了，又出了一些问题。
 ## What is this
 阅读graphsense简洁的[docs](https://graphsense.info/documentation.html)，可以看出graphsense是由几个部分组成的。其中每一个部分都被打包📦成为一个docker🚢。
 
@@ -132,7 +139,21 @@ volumes:
 
 总而言之volume是为了docker数据的持久化，这让我想到了另外一个我探索了的问题，我是通过ssh连接到服务器，然后运行了docker，（以下是猜测）这样的话当ssh断连的时候，docker-compose up的进程还在服务器运行，也就是如果这时候docker-compose ps的话还是会显示正在运行的docker程序，因为毕竟我是连到服务器，就像我用ssh连到服务器打开一个notepad，ssh断开之后，notepad还是打开的状态。然而在搜索资料的时候发现，docker是随着terminal的[存在而存在的](https://blog.csdn.net/qq_34464926/article/details/84982561)。
 
-[volume](https://deepzz.com/post/docker-compose-file.html)的映射就是主机的地址到docker中地址的映射。
+[volume](https://deepzz.com/post/docker-compose-file.html)的映射就是主机的地址到docker中地址的映射。docker持久化的意义就是使数据不随着cotainer的结束而消失，数据存放在host主机上。Docker的数据持久化主要有：[三种方式](https://michaelyou.github.io/2017/09/17/Docker%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86-Volume%EF%BC%8C-bind-mount%E5%92%8Ctmpfs-mount/)
+
+![](https://note.youdao.com/yws/api/personal/file/WEBe392735e34341f0ff6a6f57030dbccbc?method=download&shareKey=277914efc8023cfe563b4e4f7b0c7bf5)
+
+* bind mount
+
+数据可以存放在宿主机的任何地方，可以是重要的系统文件或目录，非docker应用程序可以改变这些数据。
+
+* tmpfs mounts
+
+数据只存储在宿主机的内存中，不会写到宿主机的文件系统。
+
+* volume
+
+由docker管理，存储在宿主机的某个地方，非docker应用程序不能改动这一位置的数据。
 
 所以我尝试着给了./data/权限
 `chown -R dockeruser opt/graphsense/....放着btc-client的地址/`
