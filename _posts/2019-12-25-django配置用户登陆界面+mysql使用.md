@@ -485,7 +485,7 @@ Bootstrap提供了导航条组件如下
  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     
-    <script src="{% static 'js/jquery-3.2.1.js' %}"></script>
+    <script src="{% raw %}{% static 'js/jquery-3.2.1.js' %}{% endraw %}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{% raw %}{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}{% endraw %}"></script>
     
