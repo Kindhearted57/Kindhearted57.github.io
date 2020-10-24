@@ -4,7 +4,7 @@ title: "Python list 赋值"
 key: 2020-09-18-Python-list-赋值
 pageview: true
 modify_date: 2020-09-18
-shraring: true
+sharing: true
 show_author_profile: true
 show_subscribe: true
 ---
