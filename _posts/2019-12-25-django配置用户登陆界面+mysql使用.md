@@ -303,7 +303,7 @@ STATICFILES_DIRS = [
 #### 代码内容
 这个代码是在Bootstrap的文档中提供的。
 
-```
+```html
 
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -339,7 +339,7 @@ STATICFILES_DIRS = [
 #### 创建页面导航条
 Bootstrap提供了导航条组件如下
 
-```
+```html
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -399,7 +399,7 @@ Bootstrap提供了导航条组件如下
 
 进行修改获得如下的内容
 
-```
+```html
 <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -675,7 +675,7 @@ def login(request):
 
 ### 修改`index.html`主页模版
 
-```
+```html
 {#login/templates/login/index.html#}
  
 {% extends 'login/base.html' %}
@@ -819,7 +819,7 @@ def login(request):
 `/mysite_login/login/templates/login/login.html`  
 添加如下内容：
 
-```
+```html
 
 <div class="form-group">
   {{ login_form.username.label_tag }}
@@ -867,7 +867,7 @@ class UserForm(forms.Form):
 `from captcha.fields import CaptchaField`
 #### 在login.html中加入captcha相关的内容
 
-```
+```html
 
 {% extends 'login/base.html' %}
 {% load staticfiles %}
@@ -954,7 +954,7 @@ def logout(request):
 通过判断用户登陆与否，展示不同的页面。
 修改base.html
 
-```
+```html
  <div class="collapse navbar-collapse" id="my-nav">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/index/">主页</a></li>
