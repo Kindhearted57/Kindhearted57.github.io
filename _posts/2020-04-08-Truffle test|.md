@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Truffle Test| a bug?"
 date: 2020-04-18
 tags: Ethereum

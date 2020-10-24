@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "ganache-cli problem"
 key: 2020-04-01-truffle
 pageview: true

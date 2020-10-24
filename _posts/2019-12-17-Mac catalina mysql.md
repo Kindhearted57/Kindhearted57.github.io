@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Mac catalina mysql"
 key: 2019-12-17-catalina-mysql
 pageview: true

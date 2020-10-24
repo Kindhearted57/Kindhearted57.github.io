@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Truffle version"
 key: 2020-03-29-truffle-version
 pageview: true
