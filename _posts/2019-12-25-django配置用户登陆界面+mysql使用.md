@@ -61,6 +61,7 @@ USE_I18N = True
 USE_L10N = True 
 USE_TZ = True  
 ```
+
 修改成亚洲/上海时间和中文  
 
 ```
@@ -87,6 +88,7 @@ DATABASES = {
 }
 
 ```
+
 * 注册APP，添加了之前创建的app。
 
 ```
@@ -100,6 +102,7 @@ INSTALLED_APPS = [
     'login',
 ]
 ```
+
 ### 数据库模型设计
 /login/models.py
 添加如下文件
@@ -130,6 +133,7 @@ class User(models.Model):
         verbose_name_plural = '用户'
 
 ```
+
 如果显示编码错误，在前面加上一行
 `# -*- coding: utf-8 -*-`
 其中各字段限制了字长长度，有的内容是需要输入的，有的内容是需要选择的，email使用了Django内置的邮箱类型。使用`__str__`帮助人性化显示对象信息。元数据里面定义用户按创建时间的反序排列，也就是最近的最先显示。
@@ -143,15 +147,18 @@ class User(models.Model):
 import pymysql
 pymysql.install_as_MySQLdb()
 ```
+
 #### Mysql创建数据库
 报错：
 `django.db.utils.InternalError: (1049, u"Unknown database 'django'")`  
 `create database django;`
 #### 字符编码报错
+
 ```
 django.db.utils.InternalError: (1366, u"Incorrect string value: '\\xE7\\x94\\xA8\\xE6\\x88\\xB7' for column 'name' at row 1")
 
 ```
+
 [参考文献](https://blog.csdn.net/diaoyan8751/article/details/101208400)  
 
 * 首先修改django中的数据库配置信息，修改settings配置信息，加入
@@ -178,6 +185,7 @@ from django.contrib import admin
 from . import models
 admin.site.register(models.User)
 ```
+
 #### 创建超级管理员
 ![创建超级管理员](https://note.youdao.com/yws/api/personal/file/WEB758b7c4900ae45715cb46a3ad1b07da1?method=download&shareKey=08ae31dd66f1482a34ae86067842fe7a)
 这个位置的密码要输入一个数字和字母结合的，用户是jrr，密码是jrr19991026，记在这里不知道后面用得上用不上。
@@ -186,6 +194,7 @@ admin.site.register(models.User)
 #### 文件目录
 `mysite_login/urls.py`
 #### 添加路由
+
 ```
 # mysite_login/urls.py
  
@@ -202,6 +211,7 @@ urlpatterns = [
 ]
 
 ```
+
 #### 初步简易视图
 在`login/views.py`文件中写入如下内容
 
@@ -263,6 +273,7 @@ def logout(request):
 </body>
 </html>
 ```
+
 ### 引入Bootstrap
 #### 背景与下载
 Bootstrap是基于HTML、CSS、JAVASCRIPT的一个前端框架。
@@ -285,6 +296,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 ```
+
 ### 创建base.html模版
 #### 文件目录
 `/mysite_login/login/templates/login/base.html`
@@ -323,10 +335,11 @@ STATICFILES_DIRS = [
 </html>
 
 ```
+
 #### 创建页面导航条
 Bootstrap提供了导航条组件如下
 
-```html
+```
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -383,6 +396,7 @@ Bootstrap提供了导航条组件如下
 </nav>
 
 ```
+
 进行修改获得如下的内容
 
 ```
@@ -413,9 +427,10 @@ Bootstrap提供了导航条组件如下
     </nav>
 
 ```
+
 将这部分内容加入到base.html中，最后得到的base.html的代码如下
 
-```html
+```
 {% load staticfiles %}
  
 <!DOCTYPE html>
@@ -488,9 +503,10 @@ Bootstrap提供了导航条组件如下
 
 ### 结合Bootstrap修改登陆界面
 #### 文件目录
+
 `login/templates/login/login.html`
 
-```html
+```
 {% extends 'login/base.html' %}
 {% load staticfiles %}
 {% block title %}登录{% endblock %}
@@ -520,6 +536,7 @@ Bootstrap提供了导航条组件如下
 {% endblock %}
 
 ```
+
 其中，
 
 * 通过`{% extends 'base.html' %}`继承了`base.html`模版的内容。
@@ -579,6 +596,7 @@ def login(request):
 
 
 ```
+
 在前端页面的form表单里面添加一个`{% csrf_token %}`标签，是用来[防止跨站请求伪造](https://www.cnblogs.com/mengbin0546/p/9966431.html)的。
 ### 数据验证
 #### 修改login视图
@@ -610,6 +628,7 @@ def login(request):
     return render(request, 'login/login.html')
 增加
 ```
+
 #### 改变的位置
 增加了message变量，用于保存提示信息，当有错误信息的时候，将错误信息打包成一个字典，然后作为第三个参数提供给render()方法。这个数据字典在渲染模版的时候会传递到模版里供调用。
 #### 为在前端正确显示，修改login.html
@@ -653,6 +672,7 @@ def login(request):
 {% endblock %}
 
 ```
+
 ### 修改`index.html`主页模版
 
 ```
@@ -664,6 +684,7 @@ def login(request):
     <h1>欢迎回来！</h1>
 {% endblock %}
 ```
+
 ### 修改视图
 * Django的表单提供了以下功能：准备和重构数据用于页面渲染，为数据创建HTML表单元素，接受和处理用户从表单发过来的数据。
 ### 手动渲染表单
@@ -692,6 +713,7 @@ captcha需要在数据库中建立自己的数据表，所以需要执行`python
 {% endblock %}
 
 ```
+
 ### Django表单
 #### Django表单的功能
 
@@ -809,6 +831,7 @@ def login(request):
 </div>
 
 ```
+
 #### 在form类里面添加attr属性
 文件位置`/mysite_login/login/forms.py`
 
@@ -843,6 +866,7 @@ class UserForm(forms.Form):
 `captcha=CaptchaField(label='验证码')`
 `from captcha.fields import CaptchaField`
 #### 在login.html中加入captcha相关的内容
+
 ```
 
 {% extends 'login/base.html' %}
@@ -887,6 +911,7 @@ class UserForm(forms.Form):
 {% endblock %}
 
 ```
+
 ### session会话
 根据我的理解，这一部分的内容是用来保持用户的连接状态，因为HTTP的特性是每一次来自于用户浏览器的请求都是无状态、独立的，也就无法保存用户的状态，使用cookie可以保护用户状态。但是由于cookie不够安全（保存在用户的机器上），现代网站都用cookie来保存一些不重要的内容，实际的用户数据和状态以session会话的方式保存在服务器端。通常情况下，session保存在数据库内。
 #### 修改login/views中login()
@@ -896,6 +921,7 @@ class UserForm(forms.Form):
 if request.session.get('is_login',None):
     return redirect("/index/")
 ```
+
 不允许重复登录。
 
 ```
@@ -904,6 +930,7 @@ request.session['user_id'] = user.id
 request.session['user_name'] = user.name
 
 ```
+
 向session字典里面写入用户状态和数据。
 
 #### 修改logout()
@@ -922,6 +949,7 @@ def logout(request):
     return redirect("/index/")
 
 ```
+
 ### 完善页面
 通过判断用户登陆与否，展示不同的页面。
 修改base.html
@@ -944,6 +972,7 @@ def logout(request):
       </div><!-- /.container-fluid -->
 
 ```
+
 ### 注册视图
 #### 文件位置
 `/login/forms.py`
@@ -962,6 +991,7 @@ class RegisterForm(forms.Form):
     sex = forms.ChoiceField(label='性别', choices=gender)
     captcha=CaptchaField(label='验证码')
 ```
+
 #### 完善register.html
 我们在register.html中编写forms相关条目：
 
@@ -1017,6 +1047,7 @@ class RegisterForm(forms.Form):
 {% endblock %}
 
 ```
+
 #### 注册视图
 文件位置`/login/views.py`，完善register()视图
 
@@ -1061,6 +1092,7 @@ def register(request):
     return render(request, 'login/register.html', locals())
 
 ```
+
 ###  Markdown正常显示html代码
 [知乎问题](https://www.zhihu.com/question/30425128)
 
