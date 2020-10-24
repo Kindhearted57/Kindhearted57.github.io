@@ -50,3 +50,6 @@ Mac自带的python版本为2.7，可执行文件的位置在；
 
 我们可以看到，上面2.7的可执行文件的位置`/System/Library/Frameworks/Python.framework/Version`并没有3.X的版本。
 
+
+
+[参考](https://medium.com/@iantonioribeiro/dyld-library-not-loaded-executable-path-python-d044296efe47))

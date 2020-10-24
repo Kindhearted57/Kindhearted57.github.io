@@ -1,3 +1,13 @@
+---
+layout: post
+title: "django配置用户登陆界面+mysql使用"
+key: 2019-12-25-tricks
+pageview: true
+modify_date: 2020-09-14
+shraring: true
+show_author_profile: true
+show_subscribe: true
+---
 # django配置用户登陆界面+mysql使用
 ## ubuntu下面安装mysql
 `sudo apt install mysql-server`  

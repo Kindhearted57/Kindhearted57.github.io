@@ -9,25 +9,39 @@
 查看用户对相应目录的权限： `ls -l filename `
 
 
-## My background
+### My background
 
-最开始在自己的虚拟机上尝试Ubuntu18.04，四处碰壁，并且花费了许多时间等待⌛️，在某一环节发现配置严重不足导致无法编译。后来借用了一个还可以的服务器，一切就都变的容易得多了。中间因为权限的问题也耽搁了不少时间，后来服务器不给sudo权限了，又出了一些问题。
-## What is this
+花了大量的时间弄这个东西，首先没有接触过类似的图数据库，完全不知道这是啥，最开始在自己的虚拟机上尝试Ubuntu18.04，四处碰壁，并且花费了许多时间等待⌛️，在某一环节发现配置严重不足导致无法编译。后来借用了一个还可以的服务器，一切就都变的容易得多了。但是中间服务器本身出了一些问题，所以大家对服务器进行了大规模的休整，最后重新装了Ubuntu20.04的系统，在服务器修改好之后的一段时间内还没有给root权限，是后来才有了root权限，所以中间还花了一些时间探索如何在没有root权限的情况下使用服务器。
+### What is this
 阅读graphsense简洁的[docs](https://graphsense.info/documentation.html)，可以看出graphsense是由几个部分组成的。其中每一个部分都被打包📦成为一个docker🚢。
 
 * btc-client/bch-client/ltc-client...
 针对bitcoin来说，其实就是bitcoin core，一个全节点，将全节点的data同步到本地之后供后续使用。
 
 * graphsense-blocksci
-将BlockSci数据连接到Apache Cassandra，BlockSci
+将BlockSci数据连接到Apache Cassandra，BlockSci用来解析row btc数据的格式。
 
 * graphsense-tagpack 
 
-## Apache Spark
+### Apache Spark
 [完全参考](https://phoenixnap.com/kb/install-spark-on-ubuntu)
 其中spark的[版本](https://www.apache.org/dyn/closer.lua/spark/spark-2.4.6/spark-2.4.6-bin-hadoop2.7.tgz)目前应该是spark-2.4.6
-## Cassandra
-[一切以官网为准](https://cassandra.apache.org/download/)，在过程中总是出现package has no installation candidate，没有找到原因。最终重启然后用官网的步骤重新装了一遍就好了。
+### Cassandra
+[一切以官网为准](https://cassandra.apache.org/download/)
+
+首先输入命令`echo "deb https://downloads.apache.org/cassandra/debian 311x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list`
+
+或者将`deb https://downloads.apache.org/cassandra/debian 311x main` 添加到`/etc/apt/sources.list.d/cassandra.sources.list`
+
+然后添加密钥`curl https://downloads.apache.org/cassandra/KEYS | sudo apt-key add -`
+
+更新apt`sudo apt-get update`
+
+如果遇到错误：`GPG error: http://www.apache.org 311x InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A278B781FE4B2BDA`
+
+添加命令`sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key A278B781FE4B2BDA`
+
+安装`sudo apt-get install cassandra`
 
 启动cassandra的方法`sudo service cassandra start`
 
@@ -73,9 +87,20 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
 
-## BTC-client
-### 首先要创建用户
+# BTC-client
+## 首先要创建用户
 在本地系统里面创建一个用户`dockeruser`，uid为10000，如果没有这个用户的话，`docker-compose logs`的时候会报错。
+
+创建用户用到的命令：
+
+`adduser`可以自动为创建的用户指定主目录，系统shell版本，可以在创建的时候输入用户密码。
+
+`useradd`需要使用参数选项指定基本设置，如果不使用任何参数，那么创建的用户无密码、无主目录、没有指定的shell版本。
+
+我们这里需要添加uid为10000的用户，至于用户名和gid其实不会产生多大的影响，但是为了上下文统一这里还是写成一致的样子。
+
+创建指定uid的用户所用的命令：
+`useradd dockeruser -u 10000`
 
 关于docker容器内和容器外的[用户权限](https://cloud.tencent.com/developer/article/1480017)问题
 
@@ -160,16 +185,17 @@ volumes:
 
 成功了！
 
+### 开始同步
+按照github上面的[指示](https://github.com/graphsense/btc-client)即可。
 
-
-其他的一些参考到的资料。
+###其他的一些参考到的资料
 
 [软链接硬链接](https://www.ibm.com/developerworks/cn/linux/l-cn-hardandsymb-links/)
 
 [umask的概念](https://langzi989.github.io/2017/09/13/Linux中umash深入理解/)
 
-[useradd和adduser]()的区别
-经验：
+
+###经验
 ![遇见问题](https://note.youdao.com/yws/api/personal/file/WEB18fece5ed7fd9945bdfc27f2041a3cb6?method=download&shareKey=c9d0d5ed0884a2f387d98db8e1c2c2a9)
 alpine这个包一直报错temporary error(try again later)。在网上查到了很多的解决方法，比如在/etc/docker下面放一个deamon.json用来表示DNS的关系，重启docker，启动docker的时候加上--network host。后来想到，我在用的是虚拟机，使用的是NAT网络，上面的问题都在说跟网络有关，于是我就换成了桥接模式，问题解决。
 [关于三种网络模式的介绍](https://www.cnblogs.com/ggjucheng/archive/2012/08/19/2646007.html)
@@ -246,10 +272,25 @@ bitcoin           | 2020-07-25T13:21:35Z Using obfuscation key for /opt/graphsen
 ```
 
 
+### 在这个部分中常见的一些命令
+查看用户
+
+`cat /etc/passwd`
+
+查看用户组
+`cat /etc/group`
+
+
 ## graphsense_blocksci
 
+### 问题
+#### 将宿主机中的文件复制到docker里
 在blocksci中遇到的第一个问题，就是如何把宿主机中的文件复制到docker里，这个时候发现build docker中的 `.`代表的是根目录
 ![](https://note.youdao.com/yws/api/personal/file/WEBcd983c9b54d7e8f878135b18807b85bc?method=download&shareKey=d6612433099c63633e3b29b78c10c9cc)
+
+
+#### git速度太慢
+这部分可以直接跳过不看，毕竟主要还是因为一开始头铁在本地尝试搭graphsense造成的。
 
 下面遇到的第二个问题是因为代码里`git submodule update --recursive`[引发](https://git-scm.com/book/zh/v2/Git-工具-子模块)的。首先会`retry scheduled`然后就会`failed to clone a second time, aborting`。这个问题深究下去就是git clone速度太慢了，不一定什么时间就断开了。
 ![](https://note.youdao.com/yws/api/personal/file/WEBb48a63b6f400d4382a7b4c23200c9aa8?method=download&shareKey=23e6be72c49a3d9acb351425a8ea1974)
@@ -324,6 +365,9 @@ RUN  cd /opt/BlockSci && git submodule init && git submodule update --recursive
 
 
 今天打开电脑下载速度又慢了十倍，流泪，未知原因，待我侦查一番。ss重新启动了一下就好了，看来是玄学问题。
+
+#### 内存不足
+
 ![](https://note.youdao.com/yws/api/personal/file/WEB9961f5c0ad959de5cf598193e6b64f8e?method=download&shareKey=7ae97871c70aff1fb4b74c2a532d966b)
 出现了新问题，[参考](https://stackoverflow.com/questions/30887143/make-j-8-g-internal-compiler-error-killed-program-cc1plus)首先测试`dmesg`，发现原因是内存不足，[参考](https://blog.csdn.net/u011897411/article/details/89742008)解决方法是临时使用交换分区。
 
@@ -368,16 +412,22 @@ sudo rm /swapfile
 最开始在`BLOCKCHAIN_DATA_DIR`这个位置我写的是`/home/why/graphsense/btc-client/data/blocks`
 在docker容器里面发现`docker_parser`创建config文件失败，没有报错，但是config文件并没有创建出来。从[这里](https://github.com/citp/BlockSci/issues/342)看到可能是因为空间不足造成的。突然想到btc-client那边好久没看了，去看了一下果然，之前图方便给放在/opt文件夹下面了，但是/opt下面的空间不够用。于是给放回原位。
 
+在解决了存储空间大小的问题之后还是出现无法创建config的问题，提交了一个[issue](https://github.com/citp/BlockSci/issues/424)，发现是文件夹的权限问题（但是竟然没有返回报错555）
+
+`sudo chown -R dockeruser /home/graphsense`
+
 ```
 fully synced Bitcoin node
 ```
 
 要怎么理解呢
 [blk.dat](ChainDiskConfiguration)
-总看到说btc同步需要几天时间，然而我的情况下btc运作了几十分钟之后就开始循环，从2008-2020，
+总看到说btc同步需要几天时间，然而我的情况下btc运作了几十分钟之后就开始循环，从2008-2020，这个还不知道是什么原因造成的。
 
 ![](https://note.youdao.com/yws/api/personal/file/WEB0e231d7d46b9a4a291630665b2d0b44f?method=download&shareKey=5f2e333731cc9b030b41358ba2486a28)
 
+#### 将程序放在后台运行
+最开始没有意识到将程序放到后台的重要性，直接头铁放前台运行。结果运行了一个下午之后ssh断开了。
 ```
 A PID file exists in the data directory, another parser instance might already be running. Aborting.
 ```
@@ -391,7 +441,7 @@ Aborted (core dumped)
 
 ```
 
-输入`jobs`没有反应，只有在`top`中能看到进程
+输入`jobs`没有反应，只有在`top`中能看到进程，于是如何将这个sleep的进程唤醒，实在是没整明白，在[askubuntu](https://askubuntu.com/questions/1262580/how-to-wake-up-a-sleeping-process)提了个问题，但是还没有得到回答...但是大量浏览了一些资料之后发现可能根本也没办法唤醒这个进程。顶多只能kill掉。
 
 ```
   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND    
@@ -401,6 +451,7 @@ Aborted (core dumped)
  2111 dockeru+  20   0   18628   3540   3040 S   0.0  0.0   0:00.37 bash       
  2332 dockeru+  20   0   36600   3116   2680 R   0.0  0.0   0:00.00 top   
 ```
+
 PID文件和lock文件的[介绍](https://unix.stackexchange.com/questions/12815/what-are-pid-and-lock-files-for)
 PID文件重新开始的方法
 
@@ -411,11 +462,7 @@ PID文件重新开始的方法
 ```
 docker exec -ti blocksci_btc /bin/bash
 ```
-或者
 
-```
-docker exec -ti blocksci_btc /bin/bash
-```
 
 在ssh重新连接之后，docker ps 显示：
 
@@ -457,9 +504,11 @@ dockeruser@softsec-9608:~$ sudo reptyr 16767
 Unable to attach to pid 16767: No such file or directory
 ```
 
-使用tmux改变生活：
-[参考](http://louiszhai.github.io/2017/09/30/tmux/)
-因为电脑总是卡住，所以使用两个插件`Tmux Resurrect`和`Tmux Continuum`来保证开机之后还能恢复。
+#### tmux改变生活
+[参考1](http://louiszhai.github.io/2017/09/30/tmux/)
+[参考2](https://www.jianshu.com/p/fd3bbdba9dc9)
+因为电脑总是卡住(...)，所以使用两个插件`Tmux Resurrect`和`Tmux Continuum`来保证开机之后还能恢复。
+
 
 首先Tmux Resurrec：
 
@@ -470,9 +519,18 @@ mkdir plugins
 git clone https://github.com/tmux-plugins/tmux-resurrect.git
 ```
 
-### 复制模式
+Ctrl+B的prefix总是没有反应，一直以为是电脑上的默认设置有问题，直到看到这个[thread](https://superuser.com/questions/266725/tmux-ctrlb-not-working)，原来Ctrl+B之后要松开再按其他的键..
+
+
+##### tmux中复制模式
 输入`+[进入复制模式，按下 空格键 开始复制，光标选择复制区域，回车键 复制选中文本并退出复制模式，&#124;+]粘贴文本。
 
+#### 如果不想使用tmux
+可以将进程直接放在后台运行`nohup command &`，无论是否将nohup命令输出重定向到终端，输出都会附加到当前目录的nohup.out文件中。但是在nohup使用的时候，只能够进行[一次性的命令输入](https://stackoverflow.com/questions/17475098/getting-sudo-and-nohup-to-work-together)，无法进行后续的命令输入，docker需要sudo权限输入密码可能无法使用，所以还是tmux好用一点...
+
+###  ERROR
+
+`error checking context: 'can't stat '/home/graphsense-blocksci/.git''.`
 
 ## graphsense-REST
 切换python版本的方法，跟java的比较像，[参考](https://blog.csdn.net/u013894834/article/details/75305752)
@@ -497,3 +555,4 @@ git clone https://github.com/tmux-plugins/tmux-resurrect.git
 
 
 
+## Docker 安装
