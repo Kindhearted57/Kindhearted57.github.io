@@ -430,11 +430,9 @@ Bootstrap提供了导航条组件如下
 
 将这部分内容加入到base.html中，最后得到的base.html的代码如下
 
+{% highlight html linenos %}
 {% raw %}
-`{% load staticfiles %}`
-
-
-
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -493,7 +491,7 @@ Bootstrap提供了导航条组件如下
 </html>
 
 {% endraw %}
-
+{% endhighlight %}
 其中
 
 * `{% static '相对路径' %}`为我们提供静态文件加载方法，可以将页面与静态文件链接起来。链接之后才可以使用static方法。
