@@ -481,7 +481,7 @@ Bootstrap提供了导航条组件如下
     </nav>
  
     {% block content %}{% endblock %}
- 
+    {% endraw %}
  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     {% raw %}
@@ -492,7 +492,7 @@ Bootstrap提供了导航条组件如下
   </body>
 </html>
 
-{% endraw %}
+
 {% endhighlight %}
 其中
 
