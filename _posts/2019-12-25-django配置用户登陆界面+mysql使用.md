@@ -430,10 +430,10 @@ Bootstrap提供了导航条组件如下
 
 将这部分内容加入到base.html中，最后得到的base.html的代码如下
 
-
+{% raw %}
 `{% load staticfiles %}`
 
-{% highlight html linenos %}
+
 
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -492,7 +492,7 @@ Bootstrap提供了导航条组件如下
   </body>
 </html>
 
-{% endhighlight %}
+{% endraw %}
 
 其中
 
