@@ -1,7 +1,84 @@
 # About me
 Hey there:)  
-I'm a Chinese student currently studying in Beijing for my bachelor degree in Beijing University of Posts and Telecommunications(BUPT). 
 
-## Sports
-Ok I really like all kinds of sports..
+
+因为每次各种不同的简历、申请表的时候都要到处乱查 所以干脆写全一点 于是你可能在本页面上连优秀团员这种都看得到
+
+## 教育经历
+
+2017.9-至今 北京邮电大学 网络空间安全专业
+
+## 研究经历
+
+[1] DEPOSafe: Demystifying the Fake Deposit Vulnerability in Ethereum Smart Contracts[Link](https://arxiv.org/pdf/2006.06419.pdf)
+
+The 25th International Conference on Engineering of Complex Computer Systems (ICECCS 2020). 
+
+[2] Characterizing Cryptocurrency Exchange Scams[Link](https://arxiv.org/pdf/2003.07314.pdf)
+
+Elsevier Computers & Security 
+## 获奖经历
+
+### 竞赛
+[1] 第五届全国密码技术竞赛 一等奖 2019.11.24
+
+[2] 高教社杯全国大学生数学建模竞赛 北京赛区甲组 二等奖 2019.10
+### 语言
+[1] 全国大学生英语竞赛(NECCS) C类一等奖 2018.5.20
+
+[2] 北京邮电大学图书馆《口语伙伴》在线口语比赛 二等奖 2019.5
+
+[3] "外研社杯"全国英语阅读大赛 二等奖 2018.11
+
+[4] "外教社杯"全国大学生能源电力人文学术英语论坛 一等奖 2019.5.20 
+### 学生工作
+[1] 年度心理素质教育工作优秀学生骨干 一等奖 2017.12.11
+
+[2] 年度网络空间安全学院 优秀班干部 2017.12.20
+
+[3] 优秀部员 2018.12.22
+
+[4] 优秀团员 2018-2019
+
+### 奖学金
+[1] 2017-2018 校二等奖学金 校优秀学生干部
+
+[2] 2018-2019 校二等奖学金 校优秀学生干部
+
+[3] 2019-2020 校二等奖学金 校优秀学生干部
+## 学生工作经历
+2017.9- 至今 网络空间安全学院大班班长
+
+2017.9-2018.6 北京邮电大学沙河跆拳道社 中心组成员
+
+2017.9-2018.7 网络空间安全学院学生会技术部 部员
+
+2018.6-2019.6 北京邮电大学沙河跆拳道社 社长
+
+2018.7-2019.6 网络空间安全学院学生会技术部 副部长
+
+## 其他活动经历
+[1] 河南安阳文心高中支教 2018 暑期 两周
+
+[2] 《我国电信普遍服务政策实施效果》调研 2018 暑期
+## 语言成绩
+
+[1] CET 4
+631 时间：2017.12
+
+听力 234 阅读 211 写作 186
+
+[2] CET 6 
+666 2018.6
+
+听力 249 阅读 236 写作 181
+
+[3] IELTS 7 时间 2019.10.26
+
+Listening 8 Reading 7 Writing 6 Speaking 6
+
+[4] GRE 321+4 时间 2020.10.18
+
+Verbal 151 Quantative 170 AW 4
+
 
