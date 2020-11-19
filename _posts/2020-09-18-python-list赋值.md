@@ -2,6 +2,7 @@
 layout: post
 title: "Python list 赋值"
 key: 2020-09-18-Python-list-赋值
+tags: python
 pageview: true
 modify_date: 2020-09-18
 sharing: true

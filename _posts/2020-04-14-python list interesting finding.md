@@ -1,6 +1,7 @@
 ---
 title: "Python list interesting finding"
 key: 2020-04-14-python
+tags: python
 pageview: true
 modify_date: 
 shraring: true

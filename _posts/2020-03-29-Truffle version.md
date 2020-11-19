@@ -1,6 +1,7 @@
 ---
 title: "Truffle version"
 key: 2020-03-29-truffle-version
+tags: Ethereum
 pageview: true
 modify_date: 
 shraring: true

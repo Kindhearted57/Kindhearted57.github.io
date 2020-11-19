@@ -2,7 +2,7 @@
 title: "Tricks"
 key: 2020-7-12-tricks
 pageview: true
-tags: balabala
+tags: English
 modify_date: 2020-7-20
 sharing: true
 show_author_profile: true

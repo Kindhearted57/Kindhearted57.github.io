@@ -1,5 +1,7 @@
 ---
 title: "github.io初体验"
+date: 2019-09-22
+tags: blog
 key: 2019-09-22-firstone
 pageview: true
 modify_date: 2020-4-28

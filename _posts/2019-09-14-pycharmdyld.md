@@ -1,6 +1,7 @@
 ---
 title: "Pycharm dyld:Library not loaded"
 key: 2019-09-14-pycharmdyld
+tags: Python language
 pageview: true
 modify_date: 2020-09-14
 shraring: true

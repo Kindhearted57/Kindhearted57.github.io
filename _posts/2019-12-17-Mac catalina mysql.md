@@ -1,6 +1,7 @@
 ---
 title: "Mac catalina mysql"
 key: 2019-12-17-catalina-mysql
+tags: mysql
 pageview: true
 modify_date: 
 shraring: true

@@ -1,5 +1,6 @@
 ---
 title: "Expecting property name enclosed in double quotes"
+tags: python
 key: 2020-03-21-json
 pageview: true
 modify_date: 

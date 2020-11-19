@@ -1,6 +1,7 @@
 ---
 title: "ganache-cli problem"
 key: 2020-04-01-truffle
+tags: Ethereum
 pageview: true
 modify_date: 
 shraring: true

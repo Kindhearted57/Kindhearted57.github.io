@@ -1,6 +1,7 @@
 ---
 title: "Is it possible to test contract with bytecode only?"
 key: 2020-05-03-deploy_bytecode_contract
+tags: Ethereum
 pageview: true
 modify_date: 
 shraring: true
