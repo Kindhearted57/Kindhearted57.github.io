@@ -76,7 +76,10 @@ e-rater认为我`is exclude`这个地方的`is`用的不对，但是其实这里
 在grammar和usage里面出现的错误常常有这种，机器考虑不到具体的上下文环境，如果你写了一个不合常规的句子的话，就容易被机器判错。
 
 在`Wrong Article`里面，我的一个冠词也被标了：
-` These things can really boom the development of a country.`我认为这是同样的问题。
+
+`These things can really boom the development of a country.`
+
+我认为这是同样的问题。
 
 * 标点符号
 
