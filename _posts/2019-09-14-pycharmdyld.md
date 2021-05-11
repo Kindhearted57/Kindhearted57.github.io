@@ -1,12 +1,13 @@
 ---
 title: "Pycharm dyld:Library not loaded"
 key: 2019-09-14-pycharmdyld
-tags: Python language
+tags: python
 pageview: true
 modify_date: 2020-09-14
 shraring: true
 show_author_profile: true
 show_subscribe: true
+license: CC-BY-SA-4.0
 ---
 
 # ERROR| MAC Pycharm_dyld: Library not loaded
