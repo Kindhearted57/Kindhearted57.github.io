@@ -11,6 +11,8 @@ show_subscribe: true
 
 ---
 
+#JS Notebook
+
 曾经突击学过Javascript，但是过于仓促很多东西都没有好好理解，现在趁着做ethernaut的功夫复习一下javascript，这里面做一些笔记。
 
 1 修改元素
