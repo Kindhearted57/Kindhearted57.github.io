@@ -27,16 +27,16 @@ key: page-about
 
 ---
 
-## Ru Ji   纪儒
 
-Nice to meet you! Posting in this site in Chinese/English.
+
+Nice to meet you! I post in this site in Chinese/English, some of the posts are used as personal notebooks.
 
 ### Education
 
-Beijing University of Posts and Telecommunications  Beijing, China. Cyberspace Security 2017-2021
+**Beijing University of Posts and Telecommunications**  *Beijing, 🇨🇳. Cyberspace Security* 2017-2021
 
 
-University of Waterloo ON, Canada MMath in Computer Science(thesis-based) 2022- 
+**University of Waterloo**, *Ontario, 🇨🇦, MMath in Computer Science(thesis-based)* 2022- 
 
 
 
