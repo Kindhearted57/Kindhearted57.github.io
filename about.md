@@ -24,6 +24,20 @@ titles:
   fr-LU   : *FR
   # @end locale config
 key: page-about
+
 ---
 
-BUPT网安在读 目前是厌学大师
+## Ru Ji   纪儒
+
+Nice to meet you! Posting in this site in Chinese/English.
+
+### Education
+
+Beijing University of Posts and Telecommunications  Beijing, China. Cyberspace Security 2017-2021
+
+
+University of Waterloo ON, Canada MMath in Computer Science(thesis-based) 2022- 
+
+
+
+Feel free to contact me with any links under this page: )
