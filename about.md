@@ -27,17 +27,21 @@ key: page-about
 
 ---
 
+Ru Ji (纪儒)
 
+![](https://note.youdao.com/yws/api/personal/file/WEBe0a2716460dc22a668b4eb572b210eea?method=download&shareKey=eb992a107384976c7879a1668e2010be)
 
-Nice to meet you! I post in this site in Chinese/English, some of the posts are used as personal notebooks.
+Nice to meet you! I post in this site in Chinese/English, most of the posts are used as personal notebooks, so they may not be well-organized enough to read as tutorials.
 
 ### Education
 
-**Beijing University of Posts and Telecommunications**  *Beijing, 🇨🇳. Cyberspace Security* 2017-2021
+**Beijing University of Posts and Telecommunications**  *Beijing, 🇨🇳. B.Eng in Cyberspace Security* 2017-2021
 
 
 **University of Waterloo**, *Ontario, 🇨🇦, MMath in Computer Science(thesis-based)* 2022- 
 
+
+Interested in sports(skiing, jogging, taekwondo, etc.), foreign languages, literatures(Chinese, English, baby level French), music(instruments live shows).
 
 
 Feel free to contact me with any links under this page: )

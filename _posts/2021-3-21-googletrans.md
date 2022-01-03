@@ -1,3 +1,18 @@
+---
+
+layout: post
+title: 如何优雅的使用Googletrans
+key: 2021-03-21-googletrans
+tags: python
+pageview: true
+modify_date: 2020-11-22
+sharing: true
+show_author_profile: true
+show_subscribe: true
+
+---
+
+
 # Python | 如何优雅的使用Googletrans
 
 ## Background
@@ -66,8 +81,7 @@ if language != 'en':
 ### Pt.2
 
 在之前考虑过是不是翻墙的问题。尝试在命令行中使用proxychains4。
-参考[1]()
-[2](https://medium.com/@xiaoqinglin2018/mac-osx-使用proxychains-ng-91ba61472fdf)
+[参考](https://medium.com/@xiaoqinglin2018/mac-osx-使用proxychains-ng-91ba61472fdf)
 
 也可以在[.zshrc中设置](https://zhuanlan.zhihu.com/p/47849525)
 

@@ -181,3 +181,26 @@ Basic knowledge for Move -> How Move prover tool work -> basic principles of pre
 ## Rust 学习
 
 [Learn](https://www.rust-lang.org/learn)
+
+Rust的中文资源少之又少，在这里面做个rust笔记。
+
+### hashmap
+
+重新插入值会造成覆盖
+
+```
+
+#![allow(unused)]
+fn main() {
+use std::collections::HashMap;
+
+let mut scores = HashMap::new();
+
+scores.insert(String::from("Blue"), 10);
+scores.insert(String::from("Blue"), 25);
+
+println!("{:?}", scores);
+}
+
+```
+代码[参考](https://kaisery.github.io/trpl-zh-cn/ch08-03-hash-maps.html)
