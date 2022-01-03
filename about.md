@@ -29,9 +29,13 @@ key: page-about
 
 Ru Ji (纪儒)
 
-![](https://note.youdao.com/yws/api/personal/file/WEBe0a2716460dc22a668b4eb572b210eea?method=download&shareKey=eb992a107384976c7879a1668e2010be)
+ <img src="https://note.youdao.com/yws/api/personal/file/WEBe0a2716460dc22a668b4eb572b210eea?method=download&shareKey=eb992a107384976c7879a1668e2010be" width = "150"  alt="potrait" align=left />
+
 
 Nice to meet you! I post in this site in Chinese/English, most of the posts are used as personal notebooks, so they may not be well-organized enough to read as tutorials.
+
+See my [CV](https://github.com/Kindhearted57/CV/blob/master/cv-Eng/Ru-JI-cv.pdf) for more academic information. 
+ <br /> <br /> <br /> <br /> <br />
 
 ### Education
 
