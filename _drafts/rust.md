@@ -82,5 +82,12 @@ Method not found in T
 
 [stackoverflow](https://stackoverflow.com/questions/33390395/can-a-function-return-different-types-depending-on-conditional-statements-in-the)
 
+## Cannot borrow 'x' as mutable more than once
+
+[stackoverflow](https://stackoverflow.com/questions/31281155/cannot-borrow-x-as-mutable-more-than-once-at-a-time)
 
 
+
+## Target folder grows to ridiculous size after some time
+
+[Some discussion on Reddit](https://www.reddit.com/r/rust/comments/a2sb8o/the_target_directory_grows_to_ridiculous_size/)
