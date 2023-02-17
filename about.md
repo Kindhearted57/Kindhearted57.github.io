@@ -31,7 +31,13 @@ Ru Ji (纪儒)
 
 Nice to meet you! I post in this site in Chinese/English, most of the posts are used as personal notebooks, so they may not be well-organized enough to read as tutorials.
 
-See my [CV](https://github.com/Kindhearted57/CV/blob/master/cv-Eng/Ru-JI-cv.pdf) for more academic information. 
+[CV](https://github.com/Kindhearted57/CV/blob/master/cv-Eng/Ru-JI-cv.pdf)
+
+### Contact Information
+
+Office: DC 3333, 200 University Ave W, Waterloo, ON, N2L 3G1
+
+Email: r2ji@uwaterloo.ca
 
 
 ### Education
@@ -41,6 +47,28 @@ See my [CV](https://github.com/Kindhearted57/CV/blob/master/cv-Eng/Ru-JI-cv.pdf)
 
 **University of Waterloo**, *Ontario, 🇨🇦, MMath in Computer Science(thesis-based)* 2022- 
 
+### Publication
 
+1. **DEPOSafe: Demystifying the Fake Deposit Vulnerability in Ethereum Smart Contracts**
+
+**Ru Ji***, Ningyu He*, Lei Wu, Haoyu Wang, Guangdong Bai, and Yao Guo.
+Proceedings of the 25th International Conference on Engineering of Complex Computer Systems (ICECCS 2020)[Link](https://ieeexplore.ieee.org/document/9376204) [Slides]()
+
+2. **Characterizing Cryptocurrency Exchange Scams**
+
+Pengcheng Xia, Haoyu Wang, Bowen Zhang, **Ru Ji**, Bingyu Gao, Lei Wu, Xiapu Luo, Guoai Xu
+Elsevier Computers & Security, 2020 [Link](https://www.sciencedirect.com/science/article/pii/S0167404820302662)
+
+### Teaching
+
+1. Teaching Assistant, CS116, Introduction to Computer Science 2, University of Waterloo (Winter 2022)
+2. Teaching Assistant, CS245, Logic and Computation, University of Waterloo (Spring 2022)
+3. Teaching Assistant, CS458, Computer Security and Privacy, University of Waterloo (Fall 2022)
+4. Teaching Assistant, CS245, Logic and Computation, University of Waterloo (Winter 2023)
+
+
+### Mischellous
+
+[Read List](https://circular-sapphire-fc4.notion.site/4c7e4bfdc78941cab52e19673a7baa66?v=24ede8559fcb4dfb8c4b8cfbb2d33a87)
 
 Feel free to contact me with any links under this page: )
