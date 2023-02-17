@@ -67,7 +67,7 @@ Elsevier Computers & Security, 2020 [Link](https://www.sciencedirect.com/science
 4. Teaching Assistant, CS245, Logic and Computation, University of Waterloo (Winter 2023)
 
 
-### Mischellous
+### Miscellaneous
 
 [Read List](https://circular-sapphire-fc4.notion.site/4c7e4bfdc78941cab52e19673a7baa66?v=24ede8559fcb4dfb8c4b8cfbb2d33a87)
 
