@@ -49,15 +49,21 @@ Email: r2ji@uwaterloo.ca
 
 ### Publication
 
-1. **DEPOSafe: Demystifying the Fake Deposit Vulnerability in Ethereum Smart Contracts**
+3. **Finding Specification Blind Spots via Fuzz Testing** 
+
+**Ru Ji**
+Proceedings of the 2023 IEEE Symposium on Security and Privacy (Oakland), May, 2023 [Link]()
+
+2. **DEPOSafe: Demystifying the Fake Deposit Vulnerability in Ethereum Smart Contracts**
 
 **Ru Ji***, Ningyu He*, Lei Wu, Haoyu Wang, Guangdong Bai, and Yao Guo.
 Proceedings of the 25th International Conference on Engineering of Complex Computer Systems (ICECCS 2020)[Link](https://ieeexplore.ieee.org/document/9376204) [Slides]()
 
-2. **Characterizing Cryptocurrency Exchange Scams**
+1. **Characterizing Cryptocurrency Exchange Scams**
 
 Pengcheng Xia, Haoyu Wang, Bowen Zhang, **Ru Ji**, Bingyu Gao, Lei Wu, Xiapu Luo, Guoai Xu
 Elsevier Computers & Security, 2020 [Link](https://www.sciencedirect.com/science/article/pii/S0167404820302662)
+
 
 ### Teaching
 
