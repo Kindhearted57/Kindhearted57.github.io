@@ -52,6 +52,7 @@ Email: r2ji@uwaterloo.ca
 3. **Finding Specification Blind Spots via Fuzz Testing** 
 
 **Ru Ji**, Meng Xu.
+
 Proceedings of the 2023 IEEE Symposium on Security and Privacy (Oakland), May, 2023 [Link]()
 
 2. **DEPOSafe: Demystifying the Fake Deposit Vulnerability in Ethereum Smart Contracts**
