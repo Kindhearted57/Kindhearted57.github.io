@@ -1,4 +1,3 @@
-
 ---
 title: "Imposter Syndrome - Anxiety/Depression - Perfectionism -Gender"
 key: 2023-04-30-imposter-syndrome
