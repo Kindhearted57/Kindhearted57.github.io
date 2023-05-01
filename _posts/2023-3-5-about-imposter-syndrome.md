@@ -1,15 +1,13 @@
 
 ---
-
 title: "Imposter Syndrome - Anxiety/Depression - Perfectionism -Gender"
-key: 2022-01-12-me-with-vehicle
+key: 2023-04-30-imposter-syndrome
 tags: balabala
 pageview: true
 modify_date: 
 shraring: true
 show_author_profile: true
 show_subscribe: true
-
 ---
 
 Decide to write this one in Chinese with the hope that I can convey my idea better.
