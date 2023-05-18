@@ -33,6 +33,10 @@ Nice to meet you! I post in this site in Chinese/English, most of the posts are 
 
 [CV](https://github.com/Kindhearted57/CV/blob/master/cv-Eng/Ru-JI-cv.pdf)
 
+**👀 I am currently seeking full-time industrial job currently. I am interested in: Blockchain security/Compiler optimization/System security/Rust Engineering**
+
+**If you have any openings available, please [drop me an email](r2ji@uwaterloo.ca)**
+
 ### Contact Information
 
 Office: DC 3333, 200 University Ave W, Waterloo, ON, N2L 3G1
