@@ -35,7 +35,11 @@ Nice to meet you! I post in this site in Chinese/English, most of the posts are 
 
 **👀 I am currently seeking full-time industrial job currently. I am interested in: Blockchain security/Compiler optimization/System security/Rust Engineering**
 
-**If you have any openings available, please drop me an email!**
+Prefer base in Canada. Also willing to consider opportunities in other cities around the world🌍.
+
+**If you have any opening available, please drop me an email!**
+
+
 
 ### Contact Information
 
