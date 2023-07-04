@@ -61,7 +61,7 @@ Email: r2ji@uwaterloo.ca
 
 **Ru Ji**, Meng Xu.
 
-Proceedings of the 2023 IEEE Symposium on Security and Privacy (Oakland), May, 2023 [Link]()
+Proceedings of the 2023 IEEE Symposium on Security and Privacy (Oakland), May, 2023 [Link](https://www.computer.org/csdl/proceedings-article/sp/2023/933600c708/1Nrc04SNlCw) [Talk](https://youtu.be/VVjYYDcTbPc) [Slides]()
 
 2. **DEPOSafe: Demystifying the Fake Deposit Vulnerability in Ethereum Smart Contracts**
 
