@@ -80,6 +80,7 @@ Elsevier Computers & Security, 2020 [Link](https://www.sciencedirect.com/science
 2. Teaching Assistant, CS245, Logic and Computation, University of Waterloo (Spring 2022)
 3. Teaching Assistant, CS458, Computer Security and Privacy, University of Waterloo (Fall 2022)
 4. Teaching Assistant, CS245, Logic and Computation, University of Waterloo (Winter 2023)
+5. Teaching Assistant, CS458, Computer Seciruty and Privacy, University of Waterloo (Spring 2023)
 
 
 ### Miscellaneous
