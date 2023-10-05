@@ -53,7 +53,7 @@ Email: r2ji@uwaterloo.ca
 **Beijing University of Posts and Telecommunications**  *Beijing, 🇨🇳. B.Eng in Cyberspace Security* 2017-2021
 
 
-**University of Waterloo**, *Ontario, 🇨🇦, MMath in Computer Science(thesis-based)* 2022- 
+**University of Waterloo**, *Ontario, 🇨🇦, MMath in Computer Science(thesis-based)* 2022-2023
 
 ### Publication
 
@@ -81,6 +81,7 @@ Elsevier Computers & Security, 2020 [Link](https://www.sciencedirect.com/science
 3. Teaching Assistant, CS458, Computer Security and Privacy, University of Waterloo (Fall 2022)
 4. Teaching Assistant, CS245, Logic and Computation, University of Waterloo (Winter 2023)
 5. Teaching Assistant, CS458, Computer Seciruty and Privacy, University of Waterloo (Spring 2023)
+6. Instructor Apprentice, CS245, Logic and Computation, University of Waterloo (Fall 2023)
 
 
 ### Miscellaneous
